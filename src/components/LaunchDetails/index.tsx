@@ -9,10 +9,10 @@ const location = useLocation();
   //const ids = (location.state).toString()
     const {data,error,loading} = useMissionInfoDetailsQuery({variables:{id:`${ids}`}})
     if(loading){
-        return <h1>Loading</h1>
+        return <h4>Loading</h4>
     }
     if(error || !data){
-        return <h1>Error</h1>
+        return <h4>Error</h4>
     }
     return (
         <div>

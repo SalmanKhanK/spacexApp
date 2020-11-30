@@ -6,6 +6,9 @@ query MissionInfo{
     mission_name
     launch_success  
     flight_number
+    links{
+      flickr_images
+   }
   }
 }
 `;

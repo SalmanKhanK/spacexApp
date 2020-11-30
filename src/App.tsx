@@ -4,8 +4,7 @@ import './App.css';
 import { LaunchList } from './components/Launch';
 import { MissionInfoDeatilsList } from './components/LaunchDetails';
 import {BrowserRouter as Router,Route,} from "react-router-dom";
-
-import {useHistory,useLocation} from 'react-router-dom'
+import swDev from './swDev'
 function App() {
 
  
@@ -23,3 +22,4 @@ function App() {
 }
 
 export default App;
+swDev();

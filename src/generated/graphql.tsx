@@ -743,6 +743,10 @@ export type MissionInfoQuery = (
   & { launches?: Maybe<Array<Maybe<(
     { __typename?: 'Launch' }
     & Pick<Launch, 'mission_name' | 'launch_success' | 'flight_number'>
+    & { links?: Maybe<(
+      { __typename?: 'LaunchLinks' }
+      & Pick<LaunchLinks, 'flickr_images'>
+    )> }
   )>>> }
 );
 
@@ -773,6 +777,9 @@ export const MissionInfoDocument = gql`
     mission_name
     launch_success
     flight_number
+    links {
+      flickr_images
+    }
   }
 }
     `;
