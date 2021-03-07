@@ -1,7 +1,7 @@
 import React from 'react'
 import {MissionInfoQuery} from '../../generated/graphql';
 import {useHistory} from 'react-router-dom';
-import {Button, Link} from '@material-ui/core'
+import {Button} from '@material-ui/core'
 interface props {
     data:MissionInfoQuery
 }
